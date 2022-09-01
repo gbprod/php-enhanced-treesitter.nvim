@@ -48,4 +48,4 @@ use({
 
 # 👁️ What does it looks like
 
-![2022-08-29-153054_416x299_scrot](https://user-images.githubusercontent.com/3751019/187213461-6a3c28ec-8d4e-430c-9626-610acd89eb9d.png)
+![2022-09-01-115648_500x633_scrot](https://user-images.githubusercontent.com/3751019/187887534-d56e5700-adca-4788-bd40-cd695d37ae62.png)

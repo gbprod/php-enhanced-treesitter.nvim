@@ -1,3 +1,5 @@
+; extends
+
 (string (string_value) @sql
     (#lua-match? @sql "^%s*SELECT"))
 (string (string_value) @sql

@@ -1,5 +1,5 @@
 ; extends
 
 [
-  "["
-] @indent
+    (enum_declaration_list)
+] @indents

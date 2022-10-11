@@ -78,17 +78,8 @@
 
 ((function_call_expression
   function: (_) @_preg_func_identifier
-  arguments: (arguments (argument (string (string_value) @regex)))+)
-  (#any-of? @_preg_func_identifier "preg_match" "preg_replace" "preg_filter"
-   "preg_match_all" "preg_replace_callback_array" "preg_replace_callback"
-   "preg_split"))
-
-((function_call_expression
-  function: (_) @_preg_func_identifier
-  arguments: (arguments (argument (encapsed_string (string_value) @regex)))+)
-  (#any-of? @_preg_func_identifier "preg_match" "preg_replace" "preg_filter"
-   "preg_match_all" "preg_replace_callback_array" "preg_replace_callback"
-   "preg_split"))
+  arguments: (arguments . (argument (_ (string_value) @regex))))
+    (#lua-match? @_preg_func_identifier "^preg_"))
 
 ((function_call_expression
   function: (_) @_shell_func_identifier

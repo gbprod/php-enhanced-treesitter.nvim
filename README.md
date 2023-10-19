@@ -17,24 +17,14 @@ Using this plugin, you will have
 
 Install the plugin with your preferred package manager:
 
-### [packer](https://github.com/wbthomason/packer.nvim)
+### [Lazy](https://github.com/folke/lazy.nvim)
 
 ```lua
 -- Lua
-use("gbprod/php-enhanced-treesitter.nvim")
+require("lazy").setup(
+  { "gbprod/php-enhanced-treesitter.nvim" }
+)
 ```
 
 You should have [Php](https://github.com/tree-sitter/tree-sitter-php) and
 [SQL syntax](https://github.com/derekstride/tree-sitter-sql) treesitter syntax installed.
-
-You can do that using `TSInstall` or with [packer](https://github.com/wbthomason/packer.nvim):
-
-```lua
--- Lua
-use({
-  "gbprod/php-enhanced-treesitter.nvim",
-  requires = {
-    { "derekstride/tree-sitter-sql", run = ":TSInstall sql" },
-  }
-})
-```

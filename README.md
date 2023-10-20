@@ -11,7 +11,7 @@ Using this plugin, you will have
 
 ## ⚡️ Requirements
 
-- Neovim >= 0.7.0 (probably less but I havn't tested)
+- Neovim >= 0.9.1
 
 ## 📦 Installation
 

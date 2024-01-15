@@ -1,6 +1,16 @@
 ;; extends
 
 (string (string_value) @injection.content
+    (#set! injection.language "html")
+    (#set! injection.include-children)
+    (#lua-match? @injection.content "^%s*</?%a*[%s*]?.*>"))
+
+(encapsed_string (string_value) @injection.content
+    (#set! injection.language "html")
+    (#set! injection.include-children)
+    (#lua-match? @injection.content "^%s*</?%a*[%s*]?.*>"))
+
+(string (string_value) @injection.content
     (#set! injection.language "sql")
     (#set! injection.include-children)
     (#lua-match? @injection.content "^%s*[Ss][Ee][Ll][Ee][Cc][Tt]"))

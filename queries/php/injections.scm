@@ -17,7 +17,7 @@
 (string (string_value) @injection.content
     (#set! injection.language "sql")
     (#set! injection.include-children)
-    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]%s+.+[Ff][Rr][Oo][Mm]"))
+    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]"))
 (string (string_value) @injection.content
     (#set! injection.language "sql")
     (#set! injection.include-children)
@@ -66,7 +66,7 @@
 (encapsed_string (string_value) @injection.content
     (#set! injection.language "sql")
     (#set! injection.include-children)
-    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]%s+.+[Ff][Rr][Oo][Mm]"))
+    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]"))
 (encapsed_string (string_value) @injection.content
     (#set! injection.language "sql")
     (#set! injection.include-children)
@@ -115,7 +115,7 @@
 ((nowdoc value: (nowdoc_body) @injection.content)
     (#set! injection.language "sql")
     (#set! injection.include-children)
-    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]%s+.+[Ff][Rr][Oo][Mm]"))
+    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]"))
 ((nowdoc value: (nowdoc_body) @injection.content)
     (#set! injection.language "sql")
     (#set! injection.include-children)
@@ -164,7 +164,7 @@
 ((heredoc value: (heredoc_body) @injection.content)
     (#set! injection.language "sql")
     (#set! injection.include-children)
-    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]%s+.+[Ff][Rr][Oo][Mm]"))
+    (#lua-match? @injection.content "^%s*[Uu][Pp][Dd][Aa][Tt][Ee]%s+.+[Ss][Ee][Tt]"))
 ((heredoc value: (heredoc_body) @injection.content)
     (#set! injection.language "sql")
     (#set! injection.include-children)

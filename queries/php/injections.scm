@@ -1,19 +1,19 @@
 ;; extends
 
-(string (string_value) @injection.content
+((string) @injection.content
     (#set! injection.language "html")
     (#set! injection.include-children)
     (#lua-match? @injection.content "^%s*</?%a*[%s*]?.*>"))
 
-(encapsed_string (string_value) @injection.content
+((encapsed_string) @injection.content
     (#set! injection.language "html")
     (#set! injection.include-children)
     (#lua-match? @injection.content "^%s*</?%a*[%s*]?.*>"))
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -23,8 +23,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string ) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -34,8 +34,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -45,8 +45,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -56,8 +56,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -67,8 +67,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -78,8 +78,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -89,9 +89,9 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
-        (nowdoc value: (nowdoc_body) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
+        ((nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
     (#set! injection.language "sql")
@@ -100,9 +100,9 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
-        (nowdoc value: (nowdoc_body) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
+        ((nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
     (#set! injection.language "sql")
@@ -111,8 +111,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -122,8 +122,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -133,8 +133,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -144,8 +144,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -155,8 +155,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 
@@ -166,8 +166,8 @@
 
 (
     [
-        (string (string_value) @injection.content)
-        (encapsed_string (string_value) @injection.content)
+        ((string) @injection.content)
+        ((encapsed_string) @injection.content)
         (nowdoc value: (nowdoc_body) @injection.content)
         (heredoc value: (heredoc_body) @injection.content)
     ] 

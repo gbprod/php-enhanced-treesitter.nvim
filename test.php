@@ -1,5 +1,14 @@
 <?php
 
+sprintf('p%s', 'test%e');
+printf('p%s', 'test%e');
+vprintf('p%s', 'test%e');
+vsprintf('p%s', 'test%e');
+
+fprintf('test%e', 'p%s');
+fscanf('test%e', 'p%s');
+sscanf('test%e', 'p%s');
+
 $a = "select * from users where id = 1";
 $a = 'select * from users where id = 1';
 $a = <<<TXT
@@ -135,22 +144,4 @@ TXT;
 $a = <<<'TXT'
 with recursive cte as (select * from users) select * from cte
 TXT;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

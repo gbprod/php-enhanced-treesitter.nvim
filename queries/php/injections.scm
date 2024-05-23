@@ -154,3 +154,15 @@
  (#set! injection.include-children)
  (#any-lua-match? @injection.content 
   "^%s*[Cc][Rr][Ee][Aa][Tt][Ee]%s+[Uu][Ss][Ee][Rr]"))
+
+((function_call_expression
+  function: (_) @_func_identifier
+  arguments: (arguments . (argument (_ (string_content) @injection.content))))
+  (#set! injection.language "printf")
+  (#any-of? @_func_identifier "sprintf" "printf" "vprintf" "vsprintf"))
+
+((function_call_expression
+  function: (_) @_func_identifier
+  arguments: (arguments (_) . (argument (_ (string_content) @injection.content))))
+  (#set! injection.language "printf")
+  (#any-of? @_func_identifier "fprintf" "fscanf" "sscanf"))

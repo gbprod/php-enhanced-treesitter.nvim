@@ -11,7 +11,9 @@ Using this plugin, you will have
 
 ## ⚡️ Requirements
 
-- Neovim >= 0.9.1
+- Neovim >= 0.10.0
+
+For Neovim 0.9, use [nvim-0.9 branch](https://github.com/gbprod/php-enhanced-treesitter.nvim/tree/nvim-0.9)
 
 ## 📦 Installation
 
